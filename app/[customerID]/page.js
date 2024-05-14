@@ -38,7 +38,7 @@ const montserrat = Montserrat({subsets: ['latin']})
 
     const customers = await getData()
     
-    console.log(customers)
+   
 
     const randomPhone = parseInt(Math.random().toFixed(3).replace("0.",""))+"-"+parseInt(Math.random().toFixed(3).replace("0.",""))+"-"+parseInt(Math.random().toFixed(4).replace("0.",""))
 
