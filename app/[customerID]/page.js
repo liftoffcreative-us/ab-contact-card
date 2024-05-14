@@ -1,9 +1,10 @@
 import React from 'react'
-// import avatar from '../images/avatar.jpg'
+import avatar from '../images/avatar.jpg'
 import { Montserrat } from 'next/font/google'
 
 import {MdPhoneIphone, MdOutlineMail, MdMail} from 'react-icons/md'
 import {BsTelephoneFill} from 'react-icons/bs'
+import Image from 'next/image'
 
 const montserrat = Montserrat({subsets: ['latin']})
 
@@ -62,14 +63,18 @@ const montserrat = Montserrat({subsets: ['latin']})
 
             <div className='mt-12 flex flex-col items-center'>
                 <h2 className='font-bold dark:text-white mb-2'>Supervisor Information</h2>
-                <h3 className='text-gray-500 dark:text-gray-400'>SupFName SupLName</h3>
-                <div className='flex gap-2 items-center justify-center text-lg text-gray-500 dark:text-gray-300'>
-                {/* <MdPhoneIphone className='text-red-700'/>  */}
-                <h3>918-555-5555</h3>
+                <div className='flex items-center justify-center px-4 py-2 border-2 border-gray-100 rounded-full'>
+                    <Image src={avatar} alt="Supervisor Picture" className='rounded-full w-[60px] h-[60px]'/>
+                    <div className='flex flex-col ml-2 items-center justify-center text-lg text-gray-500 dark:text-gray-300'>
+                        <h3 className='text-gray-500 dark:text-gray-400'>Darren Sunday</h3>
+                        <h3>918-555-5555</h3>
+                    </div> 
                 </div>
+                
+                
             </div>
         </div>
-        <div className='flex flex-col items-center dark:text-white'>
+        <div className='flex flex-col items-center dark:text-white mt-4'>
             <h3>You May Be Asked to Provide the Following:</h3>
             <h3>Customer Name</h3>
             <h3>Customer Address</h3>
@@ -82,7 +87,7 @@ const montserrat = Montserrat({subsets: ['latin']})
                 <a href="tel:9185555555"><BsTelephoneFill /></a>
             </div>
             <div className='w-[70px] h-[70px] flex items-center justify-center bg-blue-500 rounded-full text-white text-4xl'>
-            <a href="mailto:help@abdist.com"><MdMail /></a>
+            <a href={`mailto:${amEmail}`}><MdMail /></a>
             </div>
         </div> 
        
