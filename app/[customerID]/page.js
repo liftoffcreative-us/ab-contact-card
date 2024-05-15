@@ -57,7 +57,7 @@ const montserrat = Montserrat({subsets: ['latin']})
                 {/* <Image src={avatar} className='w-[140px] md:w-1/12 h-auto  rounded-full border-white border-4 dark:border-gray-900' /> */}
                 <h2 className={`${montserrat.className} text-lg font-bold pt-4 dark:text-white`}>{customers.name}</h2>
                 <h3 className='text-gray-400'>Account Manager</h3>
-                <div className='flex pt-6 gap-2 items-center justify-center text-lg text-gray-500 dark:text-gray-300'>
+                <div className='flex pt-2 gap-2 items-center justify-center text-lg text-gray-500 dark:text-gray-300'>
                     {/* <MdPhoneIphone className='text-red-700'/>  */}
                     <h3>{randomPhone}</h3>
                 </div>
@@ -66,10 +66,10 @@ const montserrat = Montserrat({subsets: ['latin']})
                     <h3>{amEmail}</h3>
                 </div>
 
-                <div className='mt-12 flex flex-col items-center'>
+                <div className='mt-8 flex flex-col items-center'>
                     <h2 className='font-bold dark:text-white mb-2'>Supervisor Information</h2>
                     <div className='flex items-center justify-center px-4 py-2 border-2 border-gray-100 rounded-full'>
-                        <Image src={avatar} alt="Supervisor Picture" className='rounded-full w-[60px] h-[60px]'/>
+                        <Image src={avatar} alt="Supervisor Picture" className='rounded-full w-[75px] h-[75px]'/>
                         <div className='flex flex-col ml-2 items-center justify-center text-lg text-gray-500 dark:text-gray-300'>
                             <h3 className='text-gray-500 dark:text-gray-400'>Darren Sunday</h3>
                             <h3>918-555-5555</h3>
@@ -79,7 +79,7 @@ const montserrat = Montserrat({subsets: ['latin']})
                     
                 </div>
             </div>
-            <div className='flex flex-col items-center dark:text-white mt-4'>
+            <div className='flex flex-col items-center dark:text-white mt-6'>
                 <h3>You May Be Asked to Provide the Following:</h3>
                 <h3>Customer Name</h3>
                 <h3>Customer Address</h3>

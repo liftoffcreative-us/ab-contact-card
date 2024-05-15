@@ -15,10 +15,10 @@ const QRCodePage = ({params}) => {
     console.log(customerID)
   return (
     <div className='flex flex-col items-center gap-6 mt-2'>
-    <section ref={componentRef} className='w-[288px] h-[170px] flex gap-2 px-2 items-center justify-center dark:text-white text-black bg-white'>
+    <section ref={componentRef} className='w-[144px] h-[85px] flex gap-2 px-2 items-center justify-center dark:text-white text-black bg-white'>
         <div className='flex flex-col items-center justify-center w-1/2 text-black font-bold'>
             <Image src={logo} alt="A&B Logo" />
-            <h2>CONTACT CARD</h2>
+            <h2 className='text-[.5rem] text-center leading-none '>CONTACT CARD</h2>
         </div>
         <div className='flex items-center justify-center w-1/2'>
             <QRCode value={customerID} className='w-full'/>
